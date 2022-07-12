@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import './StudentNewMarksForm.scss'
 function StudentNewMarksForm(props) {
   const [enteredTitle, setEnteredTitle] = useState('')
   const [enteredDate, setEnteredDate] = useState('')
@@ -34,7 +34,7 @@ function StudentNewMarksForm(props) {
         <input
           type="text"
           onChange={getFormDataTitle}
-          placeholder="Enter Name"
+          placeholder="Student Name"
           value={enteredTitle}
         />
       </div>
@@ -50,7 +50,7 @@ function StudentNewMarksForm(props) {
         <input
           type="number"
           onChange={getFormDataAmount}
-          placeholder="Enter Amount"
+          placeholder="Student Marks"
           value={enteredAmount}
         />
       </div>
